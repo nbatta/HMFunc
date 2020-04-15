@@ -126,7 +126,7 @@ class HMF(Cosmology):
             mlen = len(dn_dlnm)
             zlen = len(self.zarr)
             dn_dlnm = np.transpose(np.reshape(dn_dlnm, (zlen, np.int(mlen/zlen))))
-            dn_dm = dn_dlnm/M[:, None]
+            dn_dm = dn_dlnm/(M[:, None]/(self.h))
 
         return dn_dm * (self.h)**4
 
