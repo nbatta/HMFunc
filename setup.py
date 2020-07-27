@@ -8,6 +8,6 @@ setup(name='HMFunc',
       author='Nicholas Battaglia',
       author_email='nicholas.battaglia@gmail.com',
       license='BSD-2-Clause',
-      packages=['HMFunc'],
+      packages=['HMFunc'.'HMFunc.src'],
       package_dir={'HMFunc':'src'},
       zip_safe=False)
