@@ -1,1 +1,1 @@
-import massfunc
+import HMFunc.massfunc
