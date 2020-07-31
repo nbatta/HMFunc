@@ -2,9 +2,11 @@ import numpy as np
 from scipy.interpolate import interp2d
 import camb
 from camb import model
-from src.cosmology import Cosmology
-import src.cosmology as cosmo
-from src.tinker import dn_dlogM
+
+
+from .cosmology import Cosmology
+from . import cosmology as cosmo
+from .tinker import dn_dlogM
 
 np.seterr(divide='ignore', invalid='ignore')
 
